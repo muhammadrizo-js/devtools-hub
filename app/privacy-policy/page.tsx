@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
             1. Overview
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            DevTools Hub (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our website. Our core principle is simple: <strong className="text-[#101319]">we do not collect, store, or transmit your data.</strong>
+            DevTools Hub (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our website. Our core principle is simple: <strong className="text-[#101319]">we do not collect, store, or transmit your tool data.</strong>
           </p>
         </section>
 
@@ -44,13 +44,13 @@ export default function PrivacyPolicyPage() {
           </p>
           <ul className="list-disc pl-6 text-[#667085] space-y-2">
             <li>
-              <strong className="text-[#101319]">Analytics:</strong> We use privacy-friendly analytics (Plausible) that uses no cookies and collects no personal data. We only see aggregate numbers like total page views.
+              <strong className="text-[#101319]">Analytics:</strong> We use Google Analytics to understand site usage. This may use cookies to collect anonymous usage data such as pages visited, time on site, and browser type. No personally identifiable information is collected.
             </li>
             <li>
               <strong className="text-[#101319]">Local Storage:</strong> Your browser may store small preferences locally. This data never leaves your device and can be cleared anytime by clearing browser data.
             </li>
             <li>
-              <strong className="text-[#101319]">Server Logs:</strong> Our hosting provider (Netlify) may automatically log basic technical data (IP address, user agent, request time) for security and performance monitoring. This is standard practice for all websites.
+              <strong className="text-[#101319]">Server Logs:</strong> Our hosting provider (Netlify) may automatically log basic technical data for security and performance monitoring.
             </li>
           </ul>
         </section>
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
             4. Cookies
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            We do not use tracking cookies. Our analytics provider is cookie-less and GDPR-compliant by design. This means we do not require a cookie consent banner.
+            We use Google Analytics which may place cookies in your browser to track site usage anonymously. These cookies collect no personal information. You can disable cookies in your browser settings at any time.
           </p>
         </section>
 
@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
               <strong className="text-[#101319]">Netlify</strong> (hosting) — <a href="https://www.netlify.com/privacy/" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             </li>
             <li>
-              <strong className="text-[#101319]">Plausible</strong> (analytics) — <a href="https://plausible.io/privacy" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+              <strong className="text-[#101319]">Google Analytics</strong> (analytics) — <a href="https://policies.google.com/privacy" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             </li>
           </ul>
         </section>
@@ -86,7 +86,7 @@ export default function PrivacyPolicyPage() {
             6. Data Sharing
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            We do not sell, rent, or share your personal data with any third parties. We do not collect personal data in the first place.
+            We do not sell, rent, or share your personal data with any third parties.
           </p>
         </section>
 
@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
             7. Your Rights (GDPR & CCPA)
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            Since we collect no personal data, there is typically nothing to access, delete, or export. If you believe we have any of your data or have questions about your privacy rights, please contact us and we will respond within 30 days.
+            Since we collect minimal personal data, there is typically little to access, delete, or export. If you have questions about your privacy rights, contact us and we will respond within 30 days.
           </p>
         </section>
 
