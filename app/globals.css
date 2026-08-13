@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAFAFA;
+  --surface: #FFFFFF;
+  --text-primary: #101319;
+  --text-secondary: #667085;
+  --border: #E4E7EC;
+  --accent: #3559E0;
+  
+  --json: #F5A623;
+  --yaml: #9B5DE5;
+  --csv: #2EC4B6;
+  --xml: #FF6B6B;
+  --env: #4ADE80;
+  --cron: #38BDF8;
+  --regex: #F472B6;
+  --jwt: #FBBF24;
+  --base64: #A78BFA;
+  --uuid: #34D399;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-ibm-plex), sans-serif;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+pre, code, textarea, input {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
