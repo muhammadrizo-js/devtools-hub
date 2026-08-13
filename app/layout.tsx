@@ -23,6 +23,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "DevTools Hub - Free Browser-Based Developer Tools",
   description: "Free, fast, privacy-focused developer tools. JSON converters, regex tester, UUID generator, and more. No signup required.",
+  verification: {
+    google: "DeTf-tq3ACpkbT5uKV6swxFaGDcXL2nDYRpcxYVfY8U",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
