@@ -2,7 +2,7 @@ import { tools } from '@/lib/tools'
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://devtools-hub.vercel.app'
+  const baseUrl = 'https://devtools-hub-app.netlify.app'
   
   const toolPages = tools.map(tool => ({
     url: `${baseUrl}/${tool.slug}`,

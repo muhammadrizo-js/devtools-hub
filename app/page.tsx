@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: 'DevTools Hub - Free Browser-Based Developer Tools',
   description: 'Free, fast, privacy-focused developer tools. JSON converters, regex tester, UUID generator, and more. No signup required.',
   alternates: {
-    canonical: 'https://devtools-hub.vercel.app',
+    canonical: 'https://devtools-hub-app.netlify.app',
   },
   openGraph: {
     title: 'DevTools Hub - Free Browser-Based Developer Tools',
     description: 'Free, fast, privacy-focused developer tools. No signup. No tracking. Your data never leaves your device.',
     type: 'website',
-    url: 'https://devtools-hub.vercel.app',
+    url: 'https://devtools-hub-app.netlify.app',
     siteName: 'DevTools Hub',
   },
   twitter: {
@@ -35,7 +35,7 @@ export default function HomePage() {
             '@type': 'WebSite',
             name: 'DevTools Hub',
             description: 'Free, fast, privacy-focused developer tools. No signup required.',
-            url: 'https://devtools-hub.vercel.app',
+            url: 'https://devtools-hub-app.netlify.app',
           })
         }}
       />

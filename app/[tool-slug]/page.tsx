@@ -29,7 +29,6 @@ export async function generateMetadata({ params }: { params: Promise<{ 'tool-slu
     }
   }
 
-  const baseUrl = 'https://devtools-hub.vercel.app'
   const canonicalUrl = generateCanonicalUrl(slug)
   
   return {
@@ -76,7 +75,6 @@ export default async function ToolPage({ params }: { params: Promise<{ 'tool-slu
 
   return (
     <div className="max-w-[1120px] mx-auto px-6">
-      {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

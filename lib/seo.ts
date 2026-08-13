@@ -1,7 +1,7 @@
 import type { Tool } from './tools'
 
 export function generateJsonLd(tool: Tool, slug: string) {
-  const baseUrl = 'https://devtools-hub.vercel.app'
+  const baseUrl = 'https://devtools-hub-app.netlify.app'
   
   return {
     '@context': 'https://schema.org',
@@ -36,6 +36,6 @@ export function generateFaqJsonLd(tool: Tool) {
 }
 
 export function generateCanonicalUrl(slug: string) {
-  const baseUrl = 'https://devtools-hub.vercel.app'
+  const baseUrl = 'https://devtools-hub-app.netlify.app'
   return `${baseUrl}/${slug}`
 }
