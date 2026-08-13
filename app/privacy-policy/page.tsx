@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - DevTools Hub',
-  description: 'Terms of Service for DevTools Hub. Free developer tools provided as-is with no warranty.',
+  title: 'Privacy Policy - DevTools Hub',
+  description: 'Privacy Policy for DevTools Hub. We do not collect, store, or transmit your data. All processing happens in your browser.',
 }
 
-export default function TermsOfServicePage() {
+export default function PrivacyPolicyPage() {
   return (
     <div className="max-w-[1120px] mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold text-[#101319] mb-4" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-        Terms of Service
+        Privacy Policy
       </h1>
       
       <p className="text-sm text-[#667085] mb-8">
@@ -19,89 +19,101 @@ export default function TermsOfServicePage() {
       <div className="space-y-8">
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            1. Acceptance of Terms
+            1. Overview
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            By accessing or using DevTools Hub (&quot;the Service&quot;), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Service.
+            DevTools Hub (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our website. Our core principle is simple: <strong className="text-[#101319]">we do not collect, store, or transmit your data.</strong>
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            2. Description of Service
+            2. Data Processing Location
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            DevTools Hub provides free, browser-based developer utilities including format converters, generators, validators, and testers. All tools process data locally in your browser — no data is transmitted to our servers.
+            All tool operations (conversions, formatting, generation, decoding) happen entirely in your browser using client-side JavaScript. <strong className="text-[#101319]">Your input data never leaves your device.</strong> We never see, store, or transmit the content you enter into any tool.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            3. Acceptable Use
+            3. What We Collect
           </h2>
           <p className="text-[#667085] leading-relaxed mb-3">
-            You agree not to:
+            We collect the minimum amount of data necessary to operate:
           </p>
           <ul className="list-disc pl-6 text-[#667085] space-y-2">
-            <li>Attempt to disrupt, overload, or attack the Service</li>
-            <li>Scrape or bulk download content without permission</li>
-            <li>Use the Service for any illegal or unauthorized purpose</li>
-            <li>Attempt to reverse engineer or exploit the Service</li>
-            <li>Resell or redistribute the Service without authorization</li>
+            <li>
+              <strong className="text-[#101319]">Analytics:</strong> We use privacy-friendly analytics (Plausible) that uses no cookies and collects no personal data. We only see aggregate numbers like total page views.
+            </li>
+            <li>
+              <strong className="text-[#101319]">Local Storage:</strong> Your browser may store small preferences locally. This data never leaves your device and can be cleared anytime by clearing browser data.
+            </li>
+            <li>
+              <strong className="text-[#101319]">Server Logs:</strong> Our hosting provider (Netlify) may automatically log basic technical data (IP address, user agent, request time) for security and performance monitoring. This is standard practice for all websites.
+            </li>
           </ul>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            4. Disclaimer of Warranties
+            4. Cookies
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            The Service is provided &quot;as is&quot; and &quot;as available&quot; without any warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee that the Service will be error-free, uninterrupted, or secure.
+            We do not use tracking cookies. Our analytics provider is cookie-less and GDPR-compliant by design. This means we do not require a cookie consent banner.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            5. Limitation of Liability
+            5. Third-Party Services
+          </h2>
+          <p className="text-[#667085] leading-relaxed mb-3">
+            We use the following third-party services:
+          </p>
+          <ul className="list-disc pl-6 text-[#667085] space-y-2">
+            <li>
+              <strong className="text-[#101319]">Netlify</strong> (hosting) — <a href="https://www.netlify.com/privacy/" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            </li>
+            <li>
+              <strong className="text-[#101319]">Plausible</strong> (analytics) — <a href="https://plausible.io/privacy" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
+            6. Data Sharing
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            To the maximum extent permitted by law, DevTools Hub shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or data, arising from your use of the Service.
+            We do not sell, rent, or share your personal data with any third parties. We do not collect personal data in the first place.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            6. Intellectual Property
+            7. Your Rights (GDPR & CCPA)
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            The Service and its original content, features, and functionality are owned by DevTools Hub and are protected by applicable intellectual property laws.
+            Since we collect no personal data, there is typically nothing to access, delete, or export. If you believe we have any of your data or have questions about your privacy rights, please contact us and we will respond within 30 days.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            7. Changes to the Service
+            8. Children&apos;s Privacy
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            We reserve the right to modify, suspend, or discontinue any part of the Service at any time without notice.
+            Our services are not directed to children under 13. We do not knowingly collect data from children.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            8. Changes to These Terms
+            9. Changes to This Policy
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            We may update these Terms from time to time. Continued use of the Service after changes constitutes acceptance of the updated Terms.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-            9. Governing Law
-          </h2>
-          <p className="text-[#667085] leading-relaxed">
-            These Terms shall be governed by the laws of the Republic of Uzbekistan, without regard to conflict of law principles.
+            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.
           </p>
         </section>
 
@@ -110,7 +122,7 @@ export default function TermsOfServicePage() {
             10. Contact
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            If you have questions about these Terms, contact us at: <span className="text-[#101319] font-mono">muhammadrizoumar5@outlook.com</span>
+            If you have questions about this Privacy Policy, contact us at: <span className="text-[#101319] font-mono">muhammadrizoumar5@outlook.com</span>
           </p>
         </section>
       </div>
