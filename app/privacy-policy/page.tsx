@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - DevTools Hub',
-  description: 'Privacy Policy for DevTools Hub. We do not collect, store, or transmit your data. All processing happens in your browser.',
+  description: 'Privacy Policy for DevTools Hub. Client-side tools, Google Analytics with consent banner.',
 }
 
 export default function PrivacyPolicyPage() {
@@ -11,11 +11,11 @@ export default function PrivacyPolicyPage() {
       <h1 className="text-3xl font-bold text-[#101319] mb-4" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
         Privacy Policy
       </h1>
-      
+
       <p className="text-sm text-[#667085] mb-8">
         Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
       </p>
-      
+
       <div className="space-y-8">
         <section>
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <ul className="list-disc pl-6 text-[#667085] space-y-2">
             <li>
-              <strong className="text-[#101319]">Analytics:</strong> We use Google Analytics to understand site usage. This may use cookies to collect anonymous usage data such as pages visited, time on site, and browser type. No personally identifiable information is collected.
+              <strong className="text-[#101319]">Analytics:</strong> We use Google Analytics with a consent banner. Cookies are only set after you click &quot;Accept&quot;. We collect anonymous usage data such as pages visited, time on site, and browser type. No personally identifiable information is collected.
             </li>
             <li>
               <strong className="text-[#101319]">Local Storage:</strong> Your browser may store small preferences locally. This data never leaves your device and can be cleared anytime by clearing browser data.
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
             4. Cookies
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            We use Google Analytics which may place cookies in your browser to track site usage anonymously. These cookies collect no personal information. You can disable cookies in your browser settings at any time.
+            We use cookies only for Google Analytics, and they are set only after you click &quot;Accept&quot; on our cookie consent banner. You can reject cookies by clicking &quot;Reject&quot;. You can also disable cookies in your browser settings at any time.
           </p>
         </section>
 
@@ -68,15 +68,14 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-xl font-semibold text-[#101319] mb-3" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
             5. Third-Party Services
           </h2>
-          <p className="text-[#667085] leading-relaxed mb-3">
-            We use the following third-party services:
-          </p>
-          <ul className="list-disc pl-6 text-[#667085] space-y-2">
+          <ul className="list-disc pl-6 text-[#667085] space-y-1">
             <li>
-              <strong className="text-[#101319]">Netlify</strong> (hosting) — <a href="https://www.netlify.com/privacy/" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+              <strong className="text-[#101319]">Netlify</strong> (hosting) —{' '}
+              <a href="https://www.netlify.com/privacy/" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             </li>
             <li>
-              <strong className="text-[#101319]">Google Analytics</strong> (analytics) — <a href="https://policies.google.com/privacy" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+              <strong className="text-[#101319]">Google Analytics</strong> (analytics) —{' '}
+              <a href="https://policies.google.com/privacy" className="text-[#3559E0] hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             </li>
           </ul>
         </section>

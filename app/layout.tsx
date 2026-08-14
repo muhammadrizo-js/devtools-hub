@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Script from "next/script";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -50,23 +50,12 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${ibmPlexSans.variable} ${jetbrainsMono.variable} antialiased flex flex-col min-h-screen`}
         style={{ background: '#FAFAFA', color: '#101319' }}
       >
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-2Z2H1QHS05`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-2Z2H1QHS05');
-          `}
-        </Script>
         <Header />
         <main className="flex-1">
           {children}
         </main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
