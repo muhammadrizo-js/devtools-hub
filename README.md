@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ DevTools Hub
 
-## Getting Started
+Free browser-based developer tools. No signup. No tracking. Your data never leaves your device.
 
-First, run the development server:
+🔗 **Live:** [https://devtools-hub-app.netlify.app](https://devtools-hub-app.netlify.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tools
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- JSON to YAML Converter
+- JSON to CSV Converter
+- Base64 Encode/Decode
+- UUID Generator
+- Unix Timestamp Converter
+- JWT Decoder
+- Regex Tester
+- Cron Expression Builder
+- .env File Formatter
+- YAML to XML Converter
+- EXIF Metadata Stripper
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- 100% client-side processing
+- No accounts or signup
+- Dark-mode friendly clean UI
+- SEO-optimized individual tool pages
+- Cookie consent banner (Google Analytics loads only after consent)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- Next.js
+- TypeScript
+- Tailwind CSS
+- js-yaml, papaparse, uuid, jsonwebtoken, exifr
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Privacy
+
+All processing happens in your browser. Read the [Privacy Policy](https://devtools-hub-app.netlify.app/privacy-policy).
+
+---
+
+## Contact
+
+- Email: muhammadrizoumar5@outlook.com
+- GitHub: [muhammadrizo-js](https://github.com/muhammadrizo-js)
