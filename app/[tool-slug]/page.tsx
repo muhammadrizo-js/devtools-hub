@@ -12,6 +12,7 @@ import YamlToXmlConverter from '@/components/tools/YamlToXmlConverter'
 import EnvFormatter from '@/components/tools/EnvFormatter'
 import RegexTester from '@/components/tools/RegexTester'
 import CronBuilder from '@/components/tools/CronBuilder'
+import ExifStripper from '@/components/tools/ExifStripper'
 
 export function generateStaticParams() {
   return tools.map(tool => ({
@@ -118,6 +119,8 @@ export default async function ToolPage({ params }: { params: Promise<{ 'tool-slu
           <RegexTester />
         ) : slug === 'cron-builder' ? (
           <CronBuilder />
+        ) : slug === 'exif-stripper' ? (
+          <ExifStripper />
         ) : (
           <div className="text-center py-12">
             <div className="text-4xl mb-4">{tool.icon}</div>

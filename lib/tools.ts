@@ -8,6 +8,7 @@ export interface Tool {
   seoKeywords: string[]
   faqs: { question: string; answer: string }[]
   relatedTools: string[]
+  color: string
 }
 
 export const tools: Tool[] = [
@@ -33,7 +34,8 @@ export const tools: Tool[] = [
         answer: 'Yes, completely free. No signup required, no usage limits.'
       }
     ],
-    relatedTools: ['json-to-csv', 'yaml-to-xml', 'base64-encode']
+    relatedTools: ['json-to-csv', 'yaml-to-xml', 'base64-encode'],
+    color: '#F5A623'
   },
   {
     slug: 'json-to-csv',
@@ -53,7 +55,8 @@ export const tools: Tool[] = [
         answer: 'Yes, the generated CSV is compatible with Excel, Google Sheets, and other spreadsheet software.'
       }
     ],
-    relatedTools: ['json-to-yaml', 'yaml-to-xml', 'base64-encode']
+    relatedTools: ['json-to-yaml', 'yaml-to-xml', 'base64-encode'],
+    color: '#F5A623'
   },
   {
     slug: 'uuid-generator',
@@ -73,7 +76,8 @@ export const tools: Tool[] = [
         answer: 'UUID v4 uses random generation. The probability of collision is extremely low (2^122 possible combinations).'
       }
     ],
-    relatedTools: ['timestamp-converter', 'base64-encode', 'jwt-decoder']
+    relatedTools: ['timestamp-converter', 'base64-encode', 'jwt-decoder'],
+    color: '#34D399'
   },
   {
     slug: 'timestamp-converter',
@@ -93,7 +97,8 @@ export const tools: Tool[] = [
         answer: 'Yes, you can convert timestamps to any timezone. The tool defaults to your local timezone.'
       }
     ],
-    relatedTools: ['uuid-generator', 'base64-encode', 'jwt-decoder']
+    relatedTools: ['uuid-generator', 'base64-encode', 'jwt-decoder'],
+    color: '#38BDF8'
   },
   {
     slug: 'base64-encode',
@@ -113,7 +118,8 @@ export const tools: Tool[] = [
         answer: 'Yes, the tool handles Unicode characters correctly using UTF-8 encoding.'
       }
     ],
-    relatedTools: ['jwt-decoder', 'timestamp-converter', 'uuid-generator']
+    relatedTools: ['jwt-decoder', 'timestamp-converter', 'uuid-generator'],
+    color: '#A78BFA'
   },
   {
     slug: 'jwt-decoder',
@@ -133,7 +139,8 @@ export const tools: Tool[] = [
         answer: 'JWT (JSON Web Token) is a compact, URL-safe means of representing claims between parties. Commonly used for authentication in web applications.'
       }
     ],
-    relatedTools: ['base64-encode', 'timestamp-converter', 'json-to-yaml']
+    relatedTools: ['base64-encode', 'timestamp-converter', 'json-to-yaml'],
+    color: '#FBBF24'
   },
   {
     slug: 'regex-tester',
@@ -153,7 +160,8 @@ export const tools: Tool[] = [
         answer: 'No, everything is processed in your browser. Nothing is saved or transmitted.'
       }
     ],
-    relatedTools: ['cron-builder', 'base64-encode', 'env-formatter']
+    relatedTools: ['cron-builder', 'base64-encode', 'env-formatter'],
+    color: '#F472B6'
   },
   {
     slug: 'cron-builder',
@@ -173,7 +181,8 @@ export const tools: Tool[] = [
         answer: 'Yes, it supports both standard 5-field and extended 6-field (with seconds) cron expressions.'
       }
     ],
-    relatedTools: ['timestamp-converter', 'regex-tester', 'uuid-generator']
+    relatedTools: ['timestamp-converter', 'regex-tester', 'uuid-generator'],
+    color: '#38BDF8'
   },
   {
     slug: 'env-formatter',
@@ -193,7 +202,8 @@ export const tools: Tool[] = [
         answer: 'Yes, it flags common issues like missing values, duplicate keys, and potential secret exposure.'
       }
     ],
-    relatedTools: ['json-to-yaml', 'yaml-to-xml', 'regex-tester']
+    relatedTools: ['json-to-yaml', 'yaml-to-xml', 'regex-tester'],
+    color: '#4ADE80'
   },
   {
     slug: 'yaml-to-xml',
@@ -213,7 +223,33 @@ export const tools: Tool[] = [
         answer: 'Yes, we have a companion tool for that. Check the related tools below.'
       }
     ],
-    relatedTools: ['json-to-yaml', 'env-formatter', 'json-to-csv']
+    relatedTools: ['json-to-yaml', 'env-formatter', 'json-to-csv'],
+    color: '#FF6B6B'
+  },
+  {
+    slug: 'exif-stripper',
+    title: 'EXIF Metadata Stripper',
+    shortDescription: 'Remove hidden metadata from photos instantly',
+    longDescription: 'Remove hidden EXIF metadata from your photos. See GPS coordinates, camera model, timestamp, and other embedded data before stripping it. Perfect for privacy before sharing photos online. All processing happens in your browser.',
+    icon: '📸',
+    category: 'validators',
+    seoKeywords: ['exif stripper', 'remove metadata from photo', 'exif remover', 'photo metadata remover', 'strip gps from photo'],
+    faqs: [
+      {
+        question: 'Is my image uploaded to any server?',
+        answer: 'No. All processing happens in your browser using the File API and Canvas API. Your image never leaves your device.'
+      },
+      {
+        question: 'What metadata is removed?',
+        answer: 'All embedded metadata including GPS location, camera model, timestamp, software info, and other EXIF data. The visual quality of the image is preserved.'
+      },
+      {
+        question: 'Does this work with phone photos?',
+        answer: 'Yes. Most phone photos contain GPS coordinates and device info. This tool removes all of it before you share online.'
+      }
+    ],
+    relatedTools: ['base64-encode', 'env-formatter', 'regex-tester'],
+    color: '#F472B6'
   }
 ]
 
