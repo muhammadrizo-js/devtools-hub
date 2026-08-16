@@ -110,7 +110,7 @@ export default function TermsOfServicePage() {
             10. Contact
           </h2>
           <p className="text-[#667085] leading-relaxed">
-            If you have questions about these Terms, contact us at: <span className="text-[#101319] font-mono">muhammadrizoumar5@outlook.com</span>
+            If you have questions about these Terms, contact us at: <span className="text-[#101319] font-mono">your-email@example.com</span>
           </p>
         </section>
       </div>
